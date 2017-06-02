@@ -1,0 +1,87 @@
+body {
+	font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+  /* Enlaza la tipografia Open Sans */
+}
+.flex-container{
+	display: flex;
+}
+a { /*nav*/
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 30px;
+    color: #373B47;
+    text-decoration: none;
+}
+.menu{ /*menu fijo y ocupa todo el ancho*/
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.menu.flex-container{ /*alineados a la izquierda*/
+	justify-content: flex-start;
+}
+.logo-container{
+	margin-left: auto; /*logo alineado a la deerecha*/
+	margin-right: 20px;
+}
+.flex-container .logo{
+	width: 70px;
+	height: 70px;
+}
+#home{
+	height: 600px; 
+	margin-top: 70px;
+
+    background-image: url(../assets/images/bg-home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	justify-content: center;/*con este y el de abajo centra el contenido*/
+	align-items: center;
+	flex-direction: column; /*despliegue en forma vertical*/
+	color: white;
+}
+.text-home{
+	font-size: 2.4em;
+}
+.btn-home{
+  background: #2Ecc71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+}
+#services{
+  background-color: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px;
+}
+#services.flex-container{
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.box.services{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+footer{
+  text-align: center;
+  height: 70px;
+  background-color: #373b47;
+  color: white;
+  padding-top: 7px;
+}
