@@ -34,6 +34,9 @@ a { /*nav*/
 	width: 70px;
 	height: 70px;
 }
+/*hasta aca menu*/
+
+/*desde aca home*/
 #home{
 	height: 600px; 
 	margin-top: 70px;
@@ -63,6 +66,10 @@ a { /*nav*/
   display: inline-block;
   font-size: 14px;
 }
+
+/*hasta aca home*/
+
+/*desde aca services*/
 #services{
   background-color: #F17C72;
   text-align: center;
@@ -78,6 +85,32 @@ a { /*nav*/
 	font-weight: bold;
 }
 
+/*hasta aca service*/
+
+/*seccion work ejercicio evaluado*/
+#work{
+	text-align: center;
+    display: inline-block;
+    padding: 70px;
+    cursor: pointer;
+}
+.imagencompu img{ /*imagen work compu*/
+    text-align: center;
+    width: 800px;
+}
+#fotos{ 
+	margin-left: 20px;
+	justify-content: center;
+	margin: 2px;
+	display: flex;
+    flex-flow: row wrap;
+}
+.mb-0{
+	text-align: center;
+}
+/*hasta aca evaluado*/
+
+/* footer*/
 footer{
   text-align: center;
   height: 70px;
@@ -86,26 +119,38 @@ footer{
   padding-top: 7px;
 }
 
-/*seccion work ejercicio evaluado*/
-#work{
-  display: inline-block;
-  width: 30%;
-  height: 20%;
-  margin-top: 63px;
+/*Modal*/
+#box-work-modal{ /* fondo del modal cuadro donde va la imagen*/
+  background-color: rgba(240,30,80,0.85);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#box-work-modal .modal-body{   /*ajustes de la imagen dentro del modal*/
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+#box-work-modal .close{ /*tamaño close? y de puntero a mano*/
+  position: absolute;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
 }
-.imagencompu img{ /*imagen work compu*/
-  text-align: center;
-  width: 800px;
+
+#box-work-modal .close img{ /*tamaño x close*/
+  width: 60px;
+  border: none;
 }
-/*.flex-work {
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 250px;
+#box-work-modal img{ /*tamaño imagen dentro del modal.. si!*/
+  width: 600px;
+  border: whitesmoke 20px solid;
 }
-.flex-item {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+.hide{ /* ocultar??*/
+  display: none;
 }

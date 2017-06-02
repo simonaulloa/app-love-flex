@@ -1,3 +1,27 @@
 /*
- * Archivo principal de funcionalidad de JS
+ * Archivo principal de funcionalidad de JS MODAL
  */
+(function main(){
+	var boxes = Array.from(document.getElementsByClassName("flex-work"));
+	var modal = document.getElementById("box-work-modal");
+	var bodyModal, close, img;
+	boxes.forEach(function(box){
+		box.addEventListener("click", function(){
+			modal.innerHTML = "";
+			bodyModal = document.createElement("div");
+			bodyModal.classList.add("modal-body");
+			bodyModal.innerHTML = box.innerHTML;			
+			modal.appendChild(bodyModal);
+			modal.classList.remove("hide");
+			close = document.createElement("div");
+			close.classList.add("close");
+			img = document.createElement("img");
+			img.setAttribute("src", "http://tojaeurope.com/gallery/Close-icon.png");
+			close.appendChild(img);
+			modal.appendChild(close);
+			close.addEventListener("click",function(){
+				modal.classList.add("hide");
+			});
+		});		
+	});
+})();
