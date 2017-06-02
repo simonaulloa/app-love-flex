@@ -99,11 +99,12 @@ a { /*nav*/
     width: 800px;
 }
 #fotos{ 
-	margin-left: 20px;
 	justify-content: center;
-	margin: 2px;
 	display: flex;
     flex-flow: row wrap;
+}
+.flex-work{
+	margin: 10px 35px 35px 35px;
 }
 .mb-0{
 	text-align: center;
