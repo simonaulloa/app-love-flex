@@ -85,3 +85,27 @@ footer{
   color: white;
   padding-top: 7px;
 }
+
+/*seccion work ejercicio evaluado*/
+#work{
+  display: inline-block;
+  width: 30%;
+  height: 20%;
+  margin-top: 63px;
+  cursor: pointer;
+}
+.imagencompu img{ /*imagen work compu*/
+  text-align: center;
+  width: 800px;
+}
+/*.flex-work {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+}
+.flex-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
